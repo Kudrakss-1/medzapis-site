@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>МедЗапись — запись к врачу</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header>
+  <a class="logo" href="/">МедЗапись</a>
+  <nav><a href="#doctors">Врачи</a><a href="#how">Как записаться</a></nav>
+  <div class="user-actions"><span id="who"></span><button id="login">Войти</button><button id="logout" class="hide secondary">Выйти</button></div>
+</header>
+<main>
+  <section class="hero">
+    <div>
+      <p class="eyebrow">ОНЛАЙН-ЗАПИСЬ К ВРАЧУ</p>
+      <h1>Запишитесь к врачу<br><span>без очередей</span></h1>
+      <p class="intro">Выберите врача и удобное время. Ваша запись будет сохранена в личном кабинете.</p>
+      <a class="button-link" href="#doctors">Посмотреть врачей</a>
+    </div>
+    <div class="hero-picture" aria-hidden="true">＋</div>
+  </section>
+
+  <section id="doctors" class="section">
+    <p class="eyebrow">СПЕЦИАЛИСТЫ</p>
+    <h2>Наши врачи</h2>
+    <p class="muted">Выберите специалиста, чтобы записаться на приём.</p>
+    <div id="doctors-list" class="grid">Загружаем список врачей…</div>
+  </section>
+
+  <section id="how" class="section how">
+    <p class="eyebrow">ТРИ ПРОСТЫХ ШАГА</p>
+    <h2>Как записаться</h2>
+    <div class="steps">
+      <div><b>1. Выберите врача</b><p>Посмотрите список специалистов.</p></div>
+      <div><b>2. Выберите дату</b><p>Укажите удобное время приёма.</p></div>
+      <div><b>3. Подтвердите запись</b><p>Информация появится в личном кабинете.</p></div>
+    </div>
+  </section>
+
+  <section id="account" class="section account hide">
+    <p class="eyebrow">ЛИЧНЫЙ КАБИНЕТ</p>
+    <h2 id="account-title">Мои записи</h2>
+    <div id="account-data"></div>
+  </section>
+</main>
+<footer><b>МедЗапись</b><span>Учебный сайт для онлайн-записи к врачу</span></footer>
+<div id="modal" class="hide"><div class="shade"></div><div class="dialog"><button id="close" class="close" aria-label="Закрыть">×</button><div id="modal-inner"></div></div></div>
+<div id="toast" class="hide"></div>
+<script src="/app.js"></script>
+</body>
+</html>
